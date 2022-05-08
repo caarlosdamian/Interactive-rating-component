@@ -1,5 +1,6 @@
 :root{
   --main-bg-color: #131518;
+  --container-bg:radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
 }
 
 *{
@@ -9,8 +10,21 @@
 
 body{
   background: var(--main-bg-color);
+  
 }
 
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container{
+  background: var(--container-bg);
+  width: 380px;
+  height: 384px;
+  padding: 32px;
+  border-radius: 30px;
 }

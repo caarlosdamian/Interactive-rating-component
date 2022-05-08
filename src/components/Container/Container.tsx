@@ -1,7 +1,12 @@
 import React from 'react'
 
-export const Container = () => {
-  return (
-    <div>Container</div>
-  )
+
+interface Props {
+    children?: JSX.Element
+}
+
+export const Container = ({ children }: Props) => {
+    return (
+        <div className='container'>{children}</div>
+    )
 }
