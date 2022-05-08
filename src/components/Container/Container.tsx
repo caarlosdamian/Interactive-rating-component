@@ -2,11 +2,12 @@ import React from 'react'
 
 
 interface Props {
-    children?: JSX.Element
+    children?: JSX.Element|any;
+    className?: string
 }
 
-export const Container = ({ children }: Props) => {
+export const Container = ({ children, className }: Props) => {
     return (
-        <div className='container'>{children}</div>
+        <div className={className}>{children}</div>
     )
 }

@@ -1,16 +1,22 @@
-:root{
+:root {
   --main-bg-color: #131518;
-  --container-bg:radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+  --container-bg: radial-gradient(98.96% 98.96% at 50% 0%,
+      #232a34 0%,
+      #181e27 100%);
+  --button-bg: #fc7614;
+  --white: #fff;
+  --gray: #969fad;
+  --dark-blur: #262e38;
+  --light-gray: #7c8798;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-body{
+body {
   background: var(--main-bg-color);
-  
 }
 
 .App {
@@ -21,10 +27,107 @@ body{
   height: 100vh;
 }
 
-.container{
+.container {
   background: var(--container-bg);
   width: 380px;
   height: 384px;
   padding: 32px;
   border-radius: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 24px; */
+}
+
+.img-container {
+  background-color: var(--dark-blur);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.card-header {
+  color: var(--white);
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  margin-bottom: 15px;
+}
+
+.card-subtitle {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--gray);
+  text-align: start;
+  margin-bottom: 24px;
+}
+
+.checkbox-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.input-circle {
+  cursor: pointer;
+  width: 51px;
+  height: 51px;
+  background: var(--dark-blur);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--light-gray);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.input-circle:hover {
+  background: var(--light-gray);
+  color: var(--white);
+}
+
+.checked {
+  background: var(--button-bg);
+  color: var(--white);
+}
+
+
+.button {
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  background: var(--button-bg);
+  width: 100%;
+  padding: 13px 138px;
+  border-radius: 22.5px;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  background: var(--white);
+  color: var(--button-bg);
 }

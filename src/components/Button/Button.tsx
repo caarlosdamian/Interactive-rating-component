@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export default function Button() {
-  return (
-    <div>Button</div>
-  )
+interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  children?: JSX.Element|string;
+}
+
+export default function Button({ children, ...props }: Props) {
+  return <button {...props}>{children}</button>;
 }
