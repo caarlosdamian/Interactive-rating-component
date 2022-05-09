@@ -36,7 +36,7 @@ export const Home = () => {
             />
           ))}
         </Container>
-        <Link className="router-link" to="/thanks" state={checked}>
+        <Link className="router-link" to="/Interactive-rating-component/thanks" state={checked}>
           <Button className="button">SUBMIT</Button>
         </Link>
       </>

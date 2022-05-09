@@ -10,8 +10,8 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/thanks" element={<Thanks />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/Interactive-rating-component/thanks" element={<Thanks />} />
+          <Route path="/Interactive-rating-component" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </div>
