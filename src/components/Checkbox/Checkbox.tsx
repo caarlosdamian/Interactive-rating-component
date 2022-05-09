@@ -6,7 +6,6 @@ interface Props extends React.HtmlHTMLAttributes<HTMLInputElement> {
 }
 
 export const Checkbox = ({ checked, label, ...props }: Props) => {
-  console.log(checked===label)
     return (
 
         <label className={`input-circle ${checked===label?'checked':''}`}>{label}

@@ -1,8 +1,10 @@
 :root {
   --main-bg-color: #131518;
-  --container-bg: radial-gradient(98.96% 98.96% at 50% 0%,
-      #232a34 0%,
-      #181e27 100%);
+  --container-bg: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
   --button-bg: #fc7614;
   --white: #fff;
   --gray: #969fad;
@@ -19,6 +21,10 @@ body {
   background: var(--main-bg-color);
 }
 
+.router-link {
+  width: 100%;
+}
+
 .App {
   text-align: center;
   display: flex;
@@ -33,11 +39,20 @@ body {
   height: 384px;
   padding: 32px;
   border-radius: 30px;
+}
+
+.home {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  /* gap: 24px; */
+}
+
+.thanks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .img-container {
@@ -111,7 +126,6 @@ body {
   color: var(--white);
 }
 
-
 .button {
   cursor: pointer;
   border: none;
@@ -130,4 +144,32 @@ body {
 .button:hover {
   background: var(--white);
   color: var(--button-bg);
+}
+
+.card-img-thank {
+  margin-bottom: 36px;
+}
+
+.card-selected-span {
+  padding: 4px 20px;
+  background: var(--dark-blur);
+  border-radius: 22.5px;
+  color: var(--button-bg);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.thank-card-subtitle {
+  color: var(--gray);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* or 160% */
+  max-width: 340px;
+  text-align: center;
 }
